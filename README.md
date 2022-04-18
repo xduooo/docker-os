@@ -1,32 +1,33 @@
 # docker-os
 
-Building
-====================
+# Building
 
 Normal:
 
 ```
-docker build -f debian/buster/Dockerfile -t xduooo/debian:buster .
+docker build -f debian/bullseye/Dockerfile -t xduooo/debian:bullseye .
 ```
+
 ```
-docker build -f debian/buster/slim/Dockerfile -t xduooo/debian:buster-slim .
+docker build -f debian/bullseye/slim/Dockerfile -t xduooo/debian:bullseye-slim .
 ```
+
 ```
-docker build -f centos/Dockerfile -t xduooo/centos:8 .
+docker build -f centos/Dockerfile -t xduooo/centos:7 .
 ```
+
 ```
-docker build -f alpine/Dockerfile -t xduooo/alpine:3.14 .
+docker build -f alpine/Dockerfile -t xduooo/alpine:3.15 .
 ```
 
 With ARGs:
 
 ```
-docker build -f debian/buster/Dockerfile -t xduooo/debian:buster --build-arg TIMEZONE="Asia/Shanghai" .
+docker build -f debian/bullseye/Dockerfile -t xduooo/debian:bullseye --build-arg TIMEZONE="Asia/Shanghai" .
 ```
 
-Building ARGs
-====================
+# Building ARGs
 
-| Key | Default | Description |
-:----- | :-----: |:----------- |
-|TIMEZONE  | "Asia/Shanghai" | The timezone. |
+| Key      |     Default     | Description   |
+| :------- | :-------------: | :------------ |
+| TIMEZONE | "Asia/Shanghai" | The timezone. |
