@@ -13,10 +13,6 @@ docker build -f debian/bullseye/slim/Dockerfile -t xduooo/debian:bullseye-slim .
 ```
 
 ```
-docker build -f centos/Dockerfile -t xduooo/centos:7 .
-```
-
-```
 docker build -f alpine/Dockerfile -t xduooo/alpine:3.15 .
 ```
 
